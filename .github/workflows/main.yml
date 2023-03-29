@@ -27,8 +27,9 @@ jobs:
           apt update
           npm -i -g yarn
           yarn
-      - name: Add Eslint to the workflow
-        run: yarn add eslint
-        
+          yarn add eslint
+      - name: Configure EsLint
+        run: 
+          yarn eslint
           
           
