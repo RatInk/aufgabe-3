@@ -26,10 +26,10 @@ jobs:
         run: |
           sudo npm install -g yarn
           yarn
-          yarn add lint
+          yarn add eslint
           yarn add jest
       - name: Start lint
         run: 
-          yarn lint
+          yarn eslint
       - name: Start jest
         run: yarn jest
