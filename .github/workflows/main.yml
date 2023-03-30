@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node_version }}
-      - name: Install Dependencies / Check if Lint is installed / Check if Jest is installed
+      - name: Install Dependencies / Check if Lint is installed / Check if Jest is installed / all
         run: |
           sudo npm install -g yarn
           yarn
